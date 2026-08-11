@@ -4,11 +4,25 @@ public class Student {
     private String name;
     String sirname;
     protected int DOB;
-
-    public void setName(String name,String sirname,int DOB) {
+    public String Address;
+    public Student(){
+        this.name = "NA";
+        this.sirname="NA";
+        this.DOB=0;
+        this.Address="NA";
+    }
+    public Student(String Address){
+        this.name = "NA";
+        this.sirname="NA";
+        this.DOB=0;
+        this.Address=Address;
+    }
+    public void setName(String name,String sirname,int DOB,String Address) {
         this.name = name;
         this.sirname=sirname;
         this.DOB=DOB;
+        this.Address=Address;
+
     }
     public void setName(String name,String sirname) {
         this.name = name;
@@ -17,10 +31,19 @@ public class Student {
     public void setName(String name) {
         this.name = name;
         this.sirname="NA";
-        this.DOB=00;
+        this.DOB=0;
+        this.Address="NA";
     }
 
+ public void setName(String name, String sirname, int DOB) {
+        this.name = name;
+        this.sirname = sirname;
+        this.DOB = DOB;
+        this.Address = "NA";
+    }
+
+
     public String getName() {
-        return (name);
+        return name;
     }
 }

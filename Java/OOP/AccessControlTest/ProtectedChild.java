@@ -17,5 +17,7 @@ public class ProtectedChild extends Student {
         ProtectedChild child = new ProtectedChild();
 
         child.testProtected();
+        Student Pranil=new Student("Mumbai");    
+        System.out.println(Pranil.Address);
     }
 }
