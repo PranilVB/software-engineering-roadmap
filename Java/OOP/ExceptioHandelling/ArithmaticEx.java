@@ -11,7 +11,7 @@ public static void main(String[] args) {
 }    
 static int devide(int a ,int b){
     if (a==0) {
-        throw new ArithmeticException("Not possible");
+        throw new ArithmeticException("! Not possible !");
     }
     return b/a;
 }
