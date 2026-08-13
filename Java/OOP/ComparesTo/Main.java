@@ -1,6 +1,7 @@
 package ComparesTo;
 
 public class Main  {
+    
     public static void main(String[] args) {
         Student Pranil=new Student(2, 99);
         Student Koustubh=new Student(3, 92);

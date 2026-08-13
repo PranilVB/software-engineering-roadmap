@@ -9,7 +9,7 @@ public static void main(String[] args) {
         System.out.println("This will always run");
     }
 }    
-static int devide(int a ,int b){
+static int devide(int a ,int b)throws ArithmeticException{
     if (a==0) {
         throw new ArithmeticException("! Not possible !");
     }
