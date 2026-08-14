@@ -10,5 +10,6 @@ public class enumseg {
         }
         System.out.println(year);
         System.out.println(Year.October);
+        System.out.println(Year.valueOf("December"));
     }
 }
