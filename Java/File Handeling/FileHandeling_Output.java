@@ -26,8 +26,8 @@ public class FileHandeling_Output {
 
 
        //File writer
-               try(FileWriter fw=new FileWriter("Note.txt")){
-            fw.write("Hello world  ");
+               try(FileWriter fw=new FileWriter("Note.txt",true)){
+            fw.write("Hello world This will be appended as boolean append is set to true  ");
 
        }
        catch(IOException e){
