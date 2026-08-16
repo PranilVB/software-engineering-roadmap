@@ -23,18 +23,21 @@ public class DLL {
         }
         System.out.print(" null");
     }
+
     public void displayRev() {
         System.out.println();
-        Node last=null;
+        Node last = null;
         Node node = head;
         while (node != null) {
-            last=node;
+            last = node;
             node = node.next;
         }
+        System.out.println("Printed in reverse");
+
         System.out.print(" null ");
-        while (last!=null) {
-            System.out.print(last.value+" <--> ");
-            last=last.prev;
+        while (last != null) {
+            System.out.print(last.value + " <--> ");
+            last = last.prev;
         }
         System.out.print("null");
     }
