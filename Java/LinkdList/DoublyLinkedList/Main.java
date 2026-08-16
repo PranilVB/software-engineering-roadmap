@@ -12,5 +12,6 @@ public class Main {
         list.InsertFirst(53);
         list.InsertFirst(52);
         list.display();
+        list.displayRev();
     }
 }
