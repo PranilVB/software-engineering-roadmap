@@ -12,9 +12,30 @@ public class DLL {
         }
         head = node;
     }
-
+        public Node get(int index){
+            Node node =head;
+            for (int i = 0; i < index; i++) {
+                node=node.next;
+            }
+            return node;
+        }
+    public void InsertLast(int value){
+        if (head==null) {
+            InsertFirst(value);
+            return;
+        }
+        Node last=head;
+        Node node=new Node(value);
+        node.next=null;
+        while (last.next!=null) {
+            last=last.next;
+        }
+        last.next=node;
+        node.prev=last;
+        
+    }
     public void display() {
-        System.out.print("null <-> ");
+        System.out.print("\n null <-> ");
 
         Node node = head;
         while (node != null) {

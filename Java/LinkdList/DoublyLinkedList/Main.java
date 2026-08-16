@@ -13,5 +13,7 @@ public class Main {
         list.InsertFirst(52);
         list.display();
         list.displayRev();
+        list.InsertLast(1000);
+        list.display();
     }
 }

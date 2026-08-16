@@ -70,7 +70,7 @@ public class LL {
                 index++;
                 temp=temp.next;                
             }
-            System.out.println("Element not found");
+            System.out.println("Element not found ");
 
         }
     public void DeleteFirst(){
