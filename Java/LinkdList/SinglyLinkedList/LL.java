@@ -47,9 +47,19 @@ public class LL {
             Node secondlast=get(size-2);
             tail=secondlast;
             tail.next=null;
-            
+
 
         } 
+        public void DeleteIndex(int index){
+            if (index==0) {
+                DeleteFirst();  
+            }
+            if (index==size-1) {
+                DeleteLast();
+            }
+            Node prev=get(index-1);
+            prev.next=prev.next.next;
+        }
     public void DeleteFirst(){
         head=head.next;
         if (head==null) {

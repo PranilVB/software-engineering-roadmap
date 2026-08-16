@@ -24,5 +24,8 @@ public class Main {
         System.out.println("After deleting last element ");
         list.DeleteLast();
         list.display();
+        list.DeleteIndex(3);
+        System.out.println("Index element removed \n new list is :");
+        list.display();
     }
 }
