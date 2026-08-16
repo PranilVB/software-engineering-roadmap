@@ -60,6 +60,19 @@ public class LL {
             Node prev=get(index-1);
             prev.next=prev.next.next;
         }
+        public void GetValue(int target){
+            Node temp=head;
+            int index=0;
+            while (temp!=null) {
+                if (temp.value==target) {
+                    System.out.println("Element found at Index :"+index);
+                }
+                index++;
+                temp=temp.next;                
+            }
+            System.out.println("Element not found");
+
+        }
     public void DeleteFirst(){
         head=head.next;
         if (head==null) {
