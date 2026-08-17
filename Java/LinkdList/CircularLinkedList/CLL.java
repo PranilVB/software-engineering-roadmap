@@ -20,11 +20,12 @@ public class CLL {
     }
     public void display(){
         Node temp=head;
-        while (temp.next!=head) {
-            System.out.print(temp.value+"<=>");
+        do{            
+            System.out.print(temp.value+"=>");            
             temp=temp.next;
+
         }
-        System.out.print(head.value);
+        while (temp.next!=head);
     }
     private class Node{
         int value;
