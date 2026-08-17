@@ -17,5 +17,11 @@ public class Main {
         System.out.println("target to delete 17");
         C.deleteValue(17);
         C.display();
+        System.out.println("target to delete head");
+        C.deleteValue(1);
+        C.display();
+        System.out.println("target to delete tail");
+        C.deleteValue(2);
+        C.display();
     }
 }
