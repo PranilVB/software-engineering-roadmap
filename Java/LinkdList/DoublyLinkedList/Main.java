@@ -15,5 +15,7 @@ public class Main {
         list.displayRev();
         list.InsertLast(1000);
         list.display();
+        list.InsertIndex(1, 99999);
+        list.display();
     }
 }

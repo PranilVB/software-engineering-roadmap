@@ -24,9 +24,9 @@ public class DLL {
             InsertFirst(value);
             return;
         }
-        Node last=head;
         Node node=new Node(value);
         node.next=null;
+        Node last=head;
         while (last.next!=null) {
             last=last.next;
         }
@@ -34,6 +34,31 @@ public class DLL {
         node.prev=last;
         
     }
+    public void InsertIndex(int index,int value){
+         Node last=head;
+         int size=0;
+        while (last!=null) {
+            last=last.next;
+            size++;
+        }
+        if (index==0) {
+             InsertFirst(value);  
+             return;       
+        }
+        if (index==size) {
+            InsertLast(value);
+            return;         
+        }
+                Node temp=head;
+        for (int i = 1; i < index; i++) {
+            temp=temp.next;
+        }
+        Node node =new Node(value,temp.next,temp);
+        temp.next.prev=node;
+        temp.next=node;
+
+        }
+    
     public void display() {
         System.out.print("\n null <-> ");
 
