@@ -34,6 +34,28 @@ public class DLL {
         node.prev=last;
         
     }
+public void InsertAfter(int nvalue, int value) {
+    Node indexFinder = head;
+
+    while (indexFinder != null && indexFinder.value != nvalue) {
+        indexFinder = indexFinder.next;
+    }
+
+    if (indexFinder == null) {
+        System.out.println("Value not found");
+        return;
+    }
+
+    if (indexFinder.next == null) {
+        InsertLast(value);
+        return;
+    }
+
+    Node node = new Node(value, indexFinder.next, indexFinder);
+
+    indexFinder.next.prev = node;
+    indexFinder.next = node;
+}
     public void InsertIndex(int index,int value){
          Node last=head;
          int size=0;

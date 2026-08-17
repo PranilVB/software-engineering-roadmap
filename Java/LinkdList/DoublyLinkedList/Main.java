@@ -17,5 +17,7 @@ public class Main {
         list.display();
         list.InsertIndex(1, 99999);
         list.display();
+        list.InsertAfter(22, 000);
+        list.display();
     }
 }
