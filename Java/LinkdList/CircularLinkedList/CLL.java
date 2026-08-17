@@ -18,6 +18,22 @@ public class CLL {
         node.next=head;
         tail=node;
     }
+    public void deleteValue(int value){
+        if (head==null) {
+            return;
+        }
+        Node target=head;
+        do{
+            if(target.next.value==value){
+                target.next=target.next.next;
+                return;
+            }
+            target=target.next;
+        }
+        while(target.next!=head);
+        System.out.println("Target not available in List");
+        return;
+    }
     public void display(){
         Node temp=head;
         do{            

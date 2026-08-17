@@ -14,5 +14,8 @@ public class Main {
         C.InsertValue(394);
         C.InsertValue(2);
         C.display();
+        System.out.println("target to delete 17");
+        C.deleteValue(17);
+        C.display();
     }
 }
