@@ -3,6 +3,7 @@ public class LL {
     private int size;
     private Node head;
     private Node tail;
+    private int i;
     public LL(){
         this.size=0;
     }
@@ -91,6 +92,19 @@ public class LL {
         tail=node;
         size+=1; 
     }
+    public void InsertRecursion(int value,int index){
+        head=insertRec(value, index, head);
+    }
+    private Node insertRec(int value,int index,Node node){
+        if(index==0){
+            Node temp=new Node(value, node);
+            i = size++;
+            return temp;
+        }
+        node.next=insertRec(value, index-1, node.next);
+        return node;
+    }
+
     public void display() {
         Node temp=head;
         while(temp!=null){

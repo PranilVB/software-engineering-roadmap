@@ -27,5 +27,8 @@ public class Main {
         list.DeleteIndex(3);
         System.out.println("Index element removed \n new list is :");
         list.display();
+        System.out.println("Recursive insert element :");
+        list.InsertRecursion(33333, 4);
+        list.display();
     }
 }
