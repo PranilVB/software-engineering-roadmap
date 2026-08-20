@@ -18,8 +18,6 @@ class Solution {
         ListNode current = head;
 
         while (true) {
-
-            // Check if k nodes are available
             ListNode check = current;
             for (int i = 0; i < k; i++) {
                 if (check == null) {
