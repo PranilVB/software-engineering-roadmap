@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class ValidParanthesis20 {
+public class ValidParentheses20 {
 
     class Solution {
 
