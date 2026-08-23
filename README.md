@@ -13,9 +13,9 @@ Not a tutorial. Not a template I copied. Just my actual progress, updated as I g
 - **Main language:** Java
 - **Short-term goal:** Be genuinely job-ready before/during MCA, not just "finish a syllabus"
 - **Long-term goal:** Backend / Full Stack Software Engineer — ideally somewhere like Oracle, BofA, BNP Paribas, Deloitte, or a strong product/fintech company
-- **Current Phase:** Phase 1 — Java + OOP + DSA Foundation
-- **Current OOP Progress:** OOP 7 ✅
-- **Current Focus:** Collections Framework
+- **Current Phase:** Phase 2 — Data Structures & Algorithms
+- **Current OOP Progress:** OOP 1–7 ✅ (Phase 1 Complete)
+- **Current Focus:** Trees (Binary Trees, BST, AVL, Traversals)
 
 I'm doing this in public (well, semi-public) mostly to keep myself honest. It's easy to feel like you're "studying" when you're really just rewatching the same recursion video for the third time. Checkboxes don't lie.
 
@@ -23,13 +23,13 @@ I'm doing this in public (well, semi-public) mostly to keep myself honest. It's 
 
 ## Right now
 
-**Currently on:** Collections Framework
+**Currently on:** Non-linear Data Structures — Trees (Binary Trees, BST, Traversals)
 
-**Recently finished:** OOP 7 — Collections Framework, Vector, Vector synchronization, and Enums.
+**Recently finished:** Stacks & Queues (Custom/Dynamic Implementations + Interview Problems) and Tic Tac Toe Console Mini-Project.
 
 ### ✅ Done so far
 
-#### Java / OOP
+#### Java / OOP (Phase 1 Complete)
 
 - Java Basics
 - Classes & Objects
@@ -80,25 +80,31 @@ I'm doing this in public (well, semi-public) mostly to keep myself honest. It's 
 - Vector Synchronization
 - Enums
 - Enum Inheritance
+- BigInteger & BigDecimal
+- File Handling (Input/Output/Readers/Writers)
 
 #### DSA
 
-- Arrays
-- Searching
-- Sorting
-- Strings
+- Arrays (Linear/Binary Search, 2D Search, Rotated Search)
+- Sorting (Bubble, Selection, Insertion, Cyclic, Merge, Quick)
+- Strings & StringBuilder
 - Bit Manipulation
 - Math for DSA
-- Recursion & Backtracking
+- Recursion & Backtracking (Subsequences, Permutations, Mazes, N-Queens, Sudoku Solver)
+- Linked Lists (Singly, Doubly, Circular + All 17 Core LeetCode Problems)
+- Stacks & Queues (Custom/Dynamic/Circular Implementations + Monotonic & Classic Problems)
+
+#### Projects
+
+- Console-based Tic Tac Toe Game (OOP + Matrix traversal)
 
 ### 🔄 In progress
 
-- Collections Framework — deeper study
-- Collection classes and their practical use
+- Trees — Binary Trees, Traversals (Pre/In/Post/BFS), Binary Search Trees
 
 ### 🎯 Up next
 
-ArrayList → LinkedList → Stack → Queue → Deque → PriorityQueue → HashSet → HashMap → Trees → Heaps → Tries → Graphs → Dynamic Programming → Advanced Java → SQL → DBMS → OS → CN → Spring Boot → Projects → Placement Prep.
+AVL Trees → Segment Trees → Heaps / Priority Queues → HashMaps & Sliding Window → Tries → Graphs → Dynamic Programming → Advanced Java (Streams & Multithreading) → SQL → DBMS → OS → CN → Spring Boot → Full-stack Flagship Project → Placement Prep.
 
 ---
 
@@ -116,21 +122,20 @@ Also: DSA doesn't get to become a "supporting activity" once I hit backend/CS fu
 
 # Roadmap
 
-## Phase 1 — Java
+## Phase 1 — Java Foundation
 
 - [x] Basics, I/O, variables, operators, conditionals, loops
 - [x] Methods, Arrays, Strings, StringBuilder
 - [x] OOP 1–7
-- [x] Generics
+- [x] Generics & Wildcards
 - [x] Lambda Functions
-- [x] Exception Handling
-- [x] Custom Exceptions
-- [x] Object Cloning
-- [x] Shallow & Deep Copy
-- [ ] File Handling
-- [ ] Collections Framework — deeper study
+- [x] Exception Handling & Custom Exceptions
+- [x] Object Cloning (Shallow & Deep Copy)
+- [x] Collections Framework Introduction, Vector & Enums
+- [x] BigInteger & BigDecimal
+- [x] File Handling
 - [ ] Streams API
-- [ ] Multithreading
+- [ ] Multithreading & Concurrency
 - [ ] JVM & Memory Management
 
 ### OOP Progress
@@ -196,30 +201,11 @@ Also: DSA doesn't get to become a "supporting activity" once I hit backend/CS fu
 - [x] Enums
 - [x] Enum Inheritance
 
-### OOP Code
+### Advanced Java Additions
 
-Programs created throughout the OOP lectures include:
-
-- [x] Access modifier examples
-- [x] Package/import examples
-- [x] Static import example
-- [x] Object class example
-- [x] `toString()` example
-- [x] `equals()` example
-- [x] `hashCode()` example
-- [x] `EqualsHashCodeContract.java`
-- [x] Custom ArrayList
-- [x] Generic Custom ArrayList
-- [x] Wildcard examples
-- [x] Comparison examples
-- [x] Lambda examples
-- [x] Exception handling examples
-- [x] Custom exception
-- [x] Object cloning examples
-- [x] Shallow/deep copy examples
-- [x] `VectorExample.java`
-- [x] `EnumExample.java`
-- [x] `EnumInheritance.java`
+- [x] BigInteger implementation & operations
+- [x] BigDecimal precision math
+- [x] File Handling (File Reader, File Writer, Buffer, Stream Basics)
 
 ---
 
@@ -237,71 +223,77 @@ Programs created throughout the OOP lectures include:
 
 **Recursion & Backtracking** ✅ — intro through subsets/subsequences/permutations, dice throw, phone number letter combos, maze problems, N-Queens, N-Knights, Sudoku Solver
 
-**Linked Lists** 🔄 *(next major DSA topic)*
+**Linked Lists** ✅
 
-- [ ] Singly / Doubly / Circular
-- [ ] Insert, Delete, Reverse
-- [ ] Fast & Slow Pointer, Cycle Detection
-- [ ] Merge Lists
-- [ ] Interview problems
+- [x] Singly / Doubly / Circular Implementations
+- [x] Insert, Delete, Reverse (Iterative & Recursive)
+- [x] Fast & Slow Pointer, Cycle Detection (LC 141, LC 142)
+- [x] Merge Sorted Lists, Sort List (Merge Sort on LL)
+- [x] Middle, Palindrome, Reorder, Sub-list Reversal (LC 92)
+- [x] Reverse k-Nodes (LC 25), Alternate k-Nodes, Rotate List (LC 61)
 
-**Stacks & Queues**
+**Stacks & Queues** ✅
 
-- [ ] Stack, Dynamic Stack
-- [ ] Queue, Circular Queue, Dynamic Queue, Deque
-- [ ] Priority Queue
-- [ ] Infix/Prefix/Postfix
-- [ ] Monotonic Stack
-- [ ] Problems
+- [x] Custom Stack & Dynamic Stack (Array-based)
+- [x] Custom Queue, Circular Queue & Dynamic Circular Queue
+- [x] Implement Queue using Stacks (LC 232)
+- [x] Game of Two Stacks
+- [x] Largest Rectangle in Histogram (LC 84 - Monotonic Stack)
+- [x] Valid Parentheses (LC 20), Min Add (LC 921), Min Insertions (LC 1541)
 
-**Trees**
+**Trees** 🔄 *(Current Topic)*
 
-- [ ] Binary Tree, Traversals
-- [ ] Height, Diameter, Balanced Tree
-- [ ] Lowest Common Ancestor
-- [ ] BST, AVL Tree, Segment Tree
+- [ ] Binary Tree, Traversals (Pre, In, Post, BFS Level Order)
+- [ ] Height, Diameter, Balanced Tree Check
+- [ ] Lowest Common Ancestor (LCA)
+- [ ] Binary Search Tree (BST) operations
+- [ ] AVL Trees (Self-balancing Rotations)
+- [ ] Segment Trees
 - [ ] Interview problems
 
 **Heaps**
 
-- [ ] Heap, Priority Queue
+- [ ] Heap / Priority Queue implementation
 - [ ] Heap Sort
-- [ ] Top-K problems
+- [ ] Top-K elements / K-way merge problems
 
 **HashMaps**
 
-- [ ] HashMap, HashSet
-- [ ] Frequency problems
-- [ ] Sliding Window
+- [ ] HashMap, HashSet internal implementations
+- [ ] Frequency tracking problems
+- [ ] Sliding Window patterns
 
 **Tries**
 
-- [ ] Basics
-- [ ] Problems
+- [ ] Trie structure & Prefix search
+- [ ] Autocomplete / Word dictionary problems
 
 **Graphs**
 
-- [ ] Representation, BFS, DFS
-- [ ] Topological Sort
-- [ ] Union-Find
-- [ ] Dijkstra, Bellman-Ford, Floyd-Warshall
-- [ ] Prim, Kruskal
-- [ ] Problems
+- [ ] Adjacency Matrix & List representation
+- [ ] Breadth-First Search (BFS) & Depth-First Search (DFS)
+- [ ] Cycle Detection (Directed & Undirected)
+- [ ] Topological Sort (Kahn's Algorithm & DFS)
+- [ ] Disjoint Set Union (DSU / Union-Find)
+- [ ] Shortest Path Algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)
+- [ ] Minimum Spanning Tree (Prim's, Kruskal's)
+- [ ] Interview problems
 
 **Dynamic Programming**
 
-- [ ] Basics, Memoization, Tabulation
-- [ ] Fibonacci DP, 1D DP, 2D DP
-- [ ] LIS, Knapsack, Grid DP
-- [ ] DP on Subsequences, DP on Trees
-- [ ] Interview problems
+- [ ] Recursion to Memoization & Tabulation patterns
+- [ ] 1D DP (Fibonacci, Climbing Stairs, House Robber)
+- [ ] 2D / Grid DP (Unique Paths, Min Path Sum)
+- [ ] Knapsack (0/1, Unbounded, Fractional)
+- [ ] Longest Common Subsequence (LCS) & Edit Distance
+- [ ] Longest Increasing Subsequence (LIS)
+- [ ] DP on Trees & Bitmask DP
 
-**Greedy Algorithms**
+**Greedy & Advanced Algorithms**
 
-- [ ] Basics, Activity Selection
-- [ ] Fractional Knapsack
-- [ ] Huffman Coding
-- [ ] Interview problems
+- [ ] Activity Selection, Huffman Coding
+- [ ] Rabin-Karp & KMP String Matching
+- [ ] Mo's Algorithm / Square Root Decomposition
 
 ---
 
@@ -309,31 +301,31 @@ Programs created throughout the OOP lectures include:
 
 **SQL**
 
-- [ ] Basics → Advanced
-- [ ] Joins, Views, Indexing
-- [ ] Stored Procedures, Transactions, Triggers
+- [ ] Basics → Advanced queries
+- [ ] Joins, Subqueries, Views, Indexing
+- [ ] Transactions, ACID, Stored Procedures, Triggers
 
 **DBMS**
 
-- [ ] ER Model, Normalization
-- [ ] ACID Properties
-- [ ] Concurrency Control
+- [ ] ER Modeling & Relational Model
+- [ ] Normalization (1NF, 2NF, 3NF, BCNF)
+- [ ] Concurrency Control & Locking mechanisms
 - [ ] Interview questions
 
 **Operating Systems**
 
-- [ ] Processes & Threads
-- [ ] CPU Scheduling
-- [ ] Deadlocks
-- [ ] Memory Management, Virtual Memory
-- [ ] Interview questions
+- [ ] Processes, Threads & Concurrency
+- [ ] CPU Scheduling Algorithms
+- [ ] Process Synchronization & Deadlocks
+- [ ] Memory Management, Paging & Virtual Memory
+- [ ] File Systems & System Calls
 
 **Computer Networks**
 
-- [ ] OSI Model, TCP/IP
-- [ ] HTTP/HTTPS, DNS
-- [ ] Routing
-- [ ] Interview questions
+- [ ] OSI 7-Layer Model & TCP/IP Architecture
+- [ ] Protocols: HTTP/HTTPS, DNS, TCP, UDP, ARP, DHCP
+- [ ] IP Addressing, Subnetting & Routing Algorithms
+- [ ] Network Security basics
 
 ---
 
@@ -341,106 +333,86 @@ Programs created throughout the OOP lectures include:
 
 **Git & GitHub**
 
-- [x] Basics, Branching, Merge, Rebase
-- [ ] Advanced Git
+- [x] Basic commands, Staging, Commits
+- [x] Branching, Merging, Conflict Resolution
+- [ ] Advanced Git (Rebase, Cherry-pick, Stash)
 
 **Spring Boot**
 
-- [ ] Spring Core, Spring Boot
-- [ ] REST APIs
-- [ ] Spring Data JPA, Hibernate
-- [ ] Validation, Exception Handling
-- [ ] Spring Security, JWT Auth
-- [ ] Swagger / OpenAPI
+- [ ] Spring Core, IoC Container, Dependency Injection
+- [ ] RESTful API Architecture
+- [ ] Spring Data JPA & Hibernate ORM
+- [ ] DTO Pattern, Validation, Custom Exception Handling
+- [ ] Spring Security & JWT Authentication
+- [ ] Swagger / OpenAPI Documentation
 
 **Databases**
 
 - [ ] MySQL
 - [ ] PostgreSQL
 
-**Build Tools**
+**Build & Tooling**
 
 - [ ] Maven
-- [ ] Gradle
+- [ ] Postman for API Testing
 
 **Testing**
 
-- [ ] JUnit
+- [ ] JUnit 5
 - [ ] Mockito
 
 **DevOps Basics**
 
-- [ ] Docker
-- [ ] CI/CD basics
+- [ ] Docker (Containerizing Spring Boot + Postgres)
+- [ ] GitHub Actions (Basic CI/CD pipeline)
 
 ---
 
 # Phase 5 — Projects
 
-- [ ] Small Java console project
-- [ ] Library Management System
-- [ ] Spring Boot REST API — small learning project
-- [ ] Authentication system
-- [ ] Full-stack flagship project — the one I'll actually talk about in interviews
-- [ ] Second advanced project with something that makes it stand out
-- [ ] Deployment — something reachable, not just localhost
+- [x] Java Console Mini-Project: Tic Tac Toe (OOP + Matrix logic)
+- [ ] Library Management System (Core Java + File Handling/Collections)
+- [ ] Spring Boot REST API — Starter CRUD application
+- [ ] Authentication & Role-Based Access Control Microservice (JWT)
+- [ ] Full-Stack Flagship Project (Spring Boot + PostgreSQL + React/Vue)
+- [ ] Cloud Deployment (Render/AWS/Railway + Docker)
 
 ---
 
 # Phase 6 — Placement Preparation
 
-- [ ] Resume
-- [ ] GitHub portfolio cleanup
-- [ ] 300+ DSA problems, pattern-focused not count-focused
-- [ ] Core CS revision
-- [ ] Aptitude
-- [ ] Mock interviews
-- [ ] HR/behavioral prep
-- [ ] System design basics
+- [ ] Technical Resume building (ATS-optimized)
+- [ ] GitHub portfolio & README cleanup
+- [ ] 300+ LeetCode problems (Categorized by pattern)
+- [ ] Core CS mock tests & interview quizzes
+- [ ] Behavioral / HR questions prep (STAR method)
+- [ ] Low-Level System Design (LLD) basics
 
 ---
 
 # Current Progress
 
 ```text
-Java / OOP
-████████░░
+Java / OOP (Phase 1)
+██████████ 100%
 
-DSA
-██████░░░░
+DSA (Phase 2)
+██████░░░░  60%
 
 Git / GitHub
-███████░░░
-
-SQL
-██░░░░░░░░
-
-DBMS
-██░░░░░░░░
-
-OS
-██░░░░░░░░
-
-CN
-██░░░░░░░░
-
-Backend
-█░░░░░░░░░
-
-Spring Boot
-░░░░░░░░░░
+███████░░░  70%
 
 Projects
-███░░░░░░░
+████░░░░░░  40%
 
-LLD
-░░░░░░░░░░
+SQL & DBMS
+░░░░░░░░░░   0%
 
-System Design
-░░░░░░░░░░
+Core CS (OS/CN)
+░░░░░░░░░░   0%
 
-Docker
-░░░░░░░░░░
+Spring Boot
+░░░░░░░░░░   0%
 
-Cloud
-░░░░░░░░░░
+Docker & Cloud
+░░░░░░░░░░   0%
