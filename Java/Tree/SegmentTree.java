@@ -28,4 +28,25 @@ public class SegmentTree {
         return node;
 
     }
+    private void display(Node node){
+        String str="";
+        if (node.left!=null) {
+            str=str+"range is ["+node.left.start+"-"+node.left.end+"] Data = "+node.left.data+" => ";
+        }else{
+            str=str+"no left child";
+        }
+        str=str+"range is ["+node.start+"-"+node.end+"] Data = "+node.data+" <= ";
+        if (node.right!=null) {
+            str=str+"range is ["+node.right.start+"-"+node.right.end+"] Data = "+node.right.data+" => ";
+        }else{
+            str=str+"no right child";
+        }
+        System.out.println(str);
+        if (node.left!=null) {
+            display(node.left);
+        }
+        if (node.right!=null) {
+            display(node.right);
+        }
+    }
 }
