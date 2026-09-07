@@ -81,6 +81,8 @@ class Heap<T extends  Comparable <T>> {
         heap.insert(91);
         heap.insert(90);
         heap.insert(999);
-        System.out.println(heap.remove());
+        // System.out.println(heap.remove());
+        ArrayList list =heap.heapSort();
+        System.out.println(list);
     }
 }
