@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Heap<T extends  Comparable <T>> {
-    private  ArrayList<T>;
-    public Heep(){
+    private  ArrayList<T>list;
+    public Heap(){
         list=new ArrayList<>();
     }
-    private  swap(int first,int second){
+    private void swap(int first,int second){
         T temp=list.get(first);
         list.set(first,list.get(second));
         list.set(second,temp);
@@ -20,7 +20,7 @@ class Heap<T extends  Comparable <T>> {
     private  int right(int index){
         return index*2+2;
     }
-    private void insert(T value){
+    public void insert(T value){
         list.add(value);
         upheap(list.size()-1);
     }
@@ -30,7 +30,7 @@ class Heap<T extends  Comparable <T>> {
         }
         int p=parent(index);
         if (list.get(index).compareTo(list.get(p))<0) {
-            return swap(index,p); 
+            swap(index,p); 
             upheap(p);
         }
     }
@@ -46,19 +46,41 @@ class Heap<T extends  Comparable <T>> {
         }
         return  temp;
     }
-    private downheap(int index){
+    private void downheap(int index){
         int min=index;
         int left=left(index);
         int right=right(index);
-        if (left<list.size && list.get(min).compareTo(list.get(left))>0) {
+        if (left<list.size() && list.get(min).compareTo(list.get(left))>0) {
             min=left;
         }
-        if (right<list.size && list.get(min).compareTo(list.get(right))>0) {
+        if (right<list.size() && list.get(min).compareTo(list.get(right))>0) {
             min=right;
         }
         if (min!=index) {
             swap(min,index);
             downheap(min);
         }
+    } 
+    public ArrayList<T> heapSort()throws Exception{
+        ArrayList<T>data=new ArrayList<>();
+        while (!list.isEmpty()) {
+            data.add(this.remove());
+        }
+        return data;
+    }
+    public static void main(String[] args)throws Exception {
+        Heap<Integer>heap=new Heap<>();
+        heap.insert(99);
+        heap.insert(98);
+        heap.insert(97);
+        heap.insert(96);
+        heap.insert(95);
+        heap.insert(94);
+        heap.insert(93);
+        heap.insert(2);
+        heap.insert(91);
+        heap.insert(90);
+        heap.insert(999);
+        System.out.println(heap.remove());
     }
 }
